@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuPrincipal"
+    android:theme="@style/Theme.AppCompat.Light.DarkActionBar"
+    tools:ignore="ExtraText">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#BDB9B9"
+        android:minHeight="?attr/actionBarSize"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/princiapl"
+        android:elevation="4dp"
+        android:theme="@style/ForcaVenda"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:titleTextColor="#FFFFFF" />
+
+    <ImageButton
+        android:id="@+id/btnProduto"
+        android:layout_width="308dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="25dp"
+        android:foreground="@drawable/btnprodutoselector"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCliente" />
+
+    <ImageButton
+        android:id="@+id/btnPedidos"
+        android:layout_width="308dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="25dp"
+        android:foreground="@drawable/btnpedidosselector"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnProduto" />
+
+
+    <ImageButton
+        android:id="@+id/btnCliente"
+        android:layout_width="308dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="25dp"
+        android:foreground="@drawable/btnclienteselector"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <ImageButton
+        android:id="@+id/btnSinc"
+        android:layout_width="308dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="25dp"
+        android:foreground="@drawable/btnsincselector"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnPedidos" />
+
+    <ImageButton
+        android:id="@+id/btnConfig"
+        android:layout_width="308dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="25dp"
+        android:foreground="@drawable/btnconfigselector"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSinc" />
+
+    <TextView
+        android:id="@+id/txtVersão"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="VERSÃO 1.4"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnConfig" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

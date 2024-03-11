@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_cliente">
+
+    <fragment
+        android:id="@+id/navigation_cliente"
+        android:name="com.example.forcavenda.ui.cliente.ClienteFragment"
+        android:label="Cliente"
+        tools:layout="@layout/fragment_cliente" />
+
+    <fragment
+        android:id="@+id/navigation_produto"
+        android:name="com.example.forcavenda.ui.produto.ProdutoFragment"
+        android:label="Produto"
+        tools:layout="@layout/fragment_produto" />
+
+    <fragment
+        android:id="@+id/navigation_outros"
+        android:name="com.example.forcavenda.ui.outro.OutroFragment"
+        android:label="Outros Dados"
+        tools:layout="@layout/fragment_outro" />
+</navigation>

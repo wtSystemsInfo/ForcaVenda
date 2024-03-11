@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_cliente"
+        android:icon="@drawable/baseline_how_to_reg_24"
+        android:title="Cliente" />
+
+    <item
+        android:id="@+id/navigation_produto"
+        android:icon="@drawable/baseline_add_shopping_cart_24"
+        android:title="Produtos" />
+
+    <item
+        android:id="@+id/navigation_outros"
+        android:icon="@drawable/baseline_list_alt_24"
+        android:title="Outros Dados" />
+
+    <item
+        android:id="@+id/navigation_voltar"
+        android:icon="@drawable/baseline_reply_24"
+        android:title="Voltar" />
+
+</menu>
